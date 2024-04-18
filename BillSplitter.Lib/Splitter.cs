@@ -32,4 +32,22 @@ public class Splitter
 
         return tips;
     }
+
+    public static decimal CalcTipPerPerson(decial price, int numberOfPatrons, float tipPercent)
+    {
+        if (numberOfPatrons <= 0)
+        {
+            throw new ArgumentException("number of patrons must be greaterh than zero.", nameof(numberOfPatrons));
+        }
+
+        if (tipPercent < 0)
+        {
+            throw new ArgumentException("Tip percentage cannot be negative.", nameof(tipPercent)); 
+        }
+
+        decimal totalTip = price * (decimal)(tipPercent / 100);
+        decimal tipPerPerson = totalTip / numberOfPatrons;
+
+        return Math.Round(tipPerPerson, 2);
+    }
 }
