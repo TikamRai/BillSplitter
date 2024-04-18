@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillSplitter.Lib", "BillSplitter.Lib\BillSplitter.Lib.csproj", "{D268570F-91DD-47B7-8FE8-8DFB7F94BEF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillSplitter.Tests", "BillSplitter.Tests\BillSplitter.Tests.csproj", "{56FF41FB-FB15-4F19-8DEF-7AD1F1AD3032}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,5 +14,15 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D268570F-91DD-47B7-8FE8-8DFB7F94BEF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D268570F-91DD-47B7-8FE8-8DFB7F94BEF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D268570F-91DD-47B7-8FE8-8DFB7F94BEF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D268570F-91DD-47B7-8FE8-8DFB7F94BEF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56FF41FB-FB15-4F19-8DEF-7AD1F1AD3032}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56FF41FB-FB15-4F19-8DEF-7AD1F1AD3032}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56FF41FB-FB15-4F19-8DEF-7AD1F1AD3032}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56FF41FB-FB15-4F19-8DEF-7AD1F1AD3032}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
