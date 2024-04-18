@@ -33,7 +33,7 @@ public class Splitter
         return tips;
     }
 
-    public static decimal CalcTipPerPerson(decial price, int numberOfPatrons, float tipPercent)
+    public static decimal CalcTipPerPerson(decimal price, int numberOfPatrons, float tipPercent)
     {
         if (numberOfPatrons <= 0)
         {
