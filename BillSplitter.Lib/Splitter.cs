@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generics;
+using System.Collections.Generic;
 
 namespace BillSplitter.Lib;
 
@@ -16,7 +16,7 @@ public class Splitter
         return Math.Round(amount / numberOfPeople, 2, MidpointRounding.AwayFromZero);
     }
 
-    public static Dictionary<string, decimal> CalcTips(Dictionary<string, decimal> mealCosts, float tipPercent)
+    public static Dictionary<string, decimal> CalcTips(Dictionary<string, decimal> mealCost, float tipPercent)
     {
         if (tipPercent < 0)
         {
@@ -24,7 +24,7 @@ public class Splitter
         }
 
         var tips = new Dictionary<string, decimal>();
-        foreach (var entry in mealCosts)
+        foreach (var entry in mealCost)
         {
             decimal tipAmount = Math.Round(entry.Value * ((decimal)tipPercent / 100), 2);
             tips.Add(entry.Key, tipAmount);
