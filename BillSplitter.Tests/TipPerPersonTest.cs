@@ -7,7 +7,7 @@ namespace BillSplitter.Tests;
 public class TipPerPersonTest
 {
     [Fact]
-    public void Test1()
+    public void Test_Using_Valid_Values_Must_Return_Correct_Tip_Amount()
     {
         decimal price = 150m;
         int numberOfPatrons = 5;
@@ -20,7 +20,7 @@ public class TipPerPersonTest
     }
 
     [Fact]
-    public void Test2()
+    public void Test_Using_Zero_TipPercent_Must_Return_Zero_For_TipAmount()
     {
         decimal price = 150m;
         int numberOfPatrons = 5;
@@ -33,7 +33,7 @@ public class TipPerPersonTest
     }
 
     [Fact]
-    public void Test3()
+    public void Test_Using_Zero_NumberOfPatrons_Must_Throw_ArgumentException()
     {
         decimal price = 150m;
         int numberOfPatrons = 0;

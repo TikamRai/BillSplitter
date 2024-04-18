@@ -7,7 +7,7 @@ namespace BillSplitter.Tests;
 public class SplitterTest
 {
     [Fact]
-    public void Test1()
+    public void Test_Using_Valid_Values_Must_Return_Correct_SplitAmount()
     {
         decimal amount = 100m;
         int numberOfPeople = 2;
@@ -19,7 +19,7 @@ public class SplitterTest
     }
 
     [Fact]
-    public void Test2()
+    public void Test_Using_One_Person_Must_Return_SameAmount()
     {
         decimal amount = 100m;
         int numberOfPeople = 1;
@@ -31,7 +31,7 @@ public class SplitterTest
     }
 
     [Fact]
-    public void Test3()
+    public void Test_Using_Zero_Person_Must_Throw_ArgumentException()
     {
         decimal amount = 100m;
         int numberOfPeople = 0;
